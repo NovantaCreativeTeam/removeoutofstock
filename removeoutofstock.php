@@ -6,7 +6,7 @@ class RemoveOutOfStock extends Module {
     public function __construct() {
         $this->name = 'removeoutofstock';
         $this->version = '0.9.0';
-        $this->author = 'Venerucci Comunicazione';
+        $this->author = 'Novanta';
         $this->need_instance = 1; //??
         $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
         $this->bootstrap = true;

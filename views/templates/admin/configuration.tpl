@@ -56,7 +56,7 @@
                 <div class="col-lg-2">
                     <select name="remove_ofs_back_states[]" id="remove_ofs_back_states" multiple="multiple">
                         {foreach $orders_states as $order_state}
-                            <option value={$order_state['id_order_state']} {if in_array($order_state['id_order_state'], $remove_ofs_back_states) }selected="selected"{/if}>
+                            <option value={$order_state['id_order_state']} {if $remove_ofs_back_states && in_array($order_state['id_order_state'], $remove_ofs_back_states) }selected="selected"{/if}>
                                 {$order_state['name']}
                             </option>
                         {/foreach}
